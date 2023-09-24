@@ -22,18 +22,17 @@ app.post("/", function(req, res) {
             const weatherData = JSON.parse(d);
             const temp = weatherData.main.temp;
             const desc = weatherData.weather[0].description;
-            const icon = "https://openweathermap.org/img/wn/"+ weatherData.weather[0].icon + "@2x.png";
+            const icon = "https://openweathermap.org/img/wn/"+ weatherData.weather[0].icon + "@4x.png";
             
-            res.write("<body style='background-color:gray;'>")
-            res.write("<h1>The temperature in "+ query + " is "+ temp +" degree Celsius.</h1>");
+            res.write("<body style='background-color: #9EB384';><div align='center'><br><br>")
+            res.write("<h1>The temperature in "+ query + " is "+ temp +" degree celsius.</h1>");
             res.write("<h2>Weather description: "+ desc +".</h2>")
             res.write("<img src="+icon+">")
-            res.write("</body>");
+            res.write("</div></body>");
             res.send();
         });
     })
 });
-
 
 app.listen(PORT, function() {
     console.log(`Server is running on port ${PORT}`);
