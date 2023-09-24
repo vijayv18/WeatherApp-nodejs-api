@@ -6,21 +6,21 @@ Made using ExpressJs and OpenWeatherMap API.
 ## Clone the project
 
 ```bash
-  git clone https://github.com/vijayv18/Weather-app-nodejs-api
+  git clone https://github.com/vijayv18/WeatherApp-nodejs-api.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd Weather-app-nodejs-api
+  cd WeatherApp-nodejs-api
 ```
 
 ## Installation of dependencies
 
-Install "Weather-app-nodejs-api" with npm
+Install "WeatherApp-nodejs-api" with npm
 
 ```bash
-  cd Weather-app-nodejs-api
+  cd WeatherApp-nodejs-api
   npm install 
 ```
 This will install all the required dependencies for the project to run,    
